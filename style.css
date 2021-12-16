@@ -1,0 +1,261 @@
+@font-face {
+    font-family: Fankin;
+    src: url(fonts/friday\ night\ 2.ttf);
+}
+
+@font-face {
+    font-family: Iconos;
+    src: url(fonts/websymbols-regular-webfont.ttf);
+}
+
+body{
+    background-image: url(img/wet_snow.png);
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+a{
+    color: #4FA6EC;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.icono{
+    font-family: 'Iconos';
+}
+
+/* Cabecera */
+
+header{
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;    
+}
+
+header > img{
+    width: 150px;
+}
+
+header > h1{
+    color: #4FA6EC;    
+    font-family: Fankin;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: 0px 2px 1px #333333;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+header > h1:hover{
+    text-shadow: 0px 0px 4px #4FA6EC;
+    cursor: pointer;
+}
+
+/* Barra de navegación */
+
+nav{
+    background-color: #333333;
+    box-shadow: 0px 0px 2px gray;
+    color: white;
+    font-size: 17px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav > ul{
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    width: max-content;
+}
+
+nav > ul > li{
+    border-left: solid 1px;
+    display: block;
+    float: left;
+    padding: 0px 20px 0px 20px;
+}
+
+nav > ul > li:last-child{
+    border-right: solid 1px;
+}
+
+nav > ul > li:hover{
+    background-color: #4FA6EC;
+    box-shadow: 0px 0px 4px #0a153a inset;
+    cursor: pointer;
+    transition:background-color 200ms;
+}
+
+/* Menú Desplegable */
+
+nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    text-align: left;
+    width: 160px;
+    margin-left: -20px;
+    z-index: 1;
+    padding-inline-start: 0px;
+    box-shadow: 0px 2px 2px #333333;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav > ul > li > ul > li{
+    border-bottom: 1px solid gray;
+    text-indent: 40px;
+}
+
+nav > ul > li:hover > ul{
+    display: block;
+    
+}
+
+nav > ul > li > ul > li:hover{
+    background-color: whitesmoke;
+}
+
+/* Cuerpo de la página */
+
+#cuerpo-pagina{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 84%;
+    display: block;
+    float: left;
+}
+
+/* Apartado Lateral Izquierdo */
+
+aside{
+    background-color: white;
+    width: 20%;
+    height: max-content;
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    float: left;
+    box-shadow: 0px 0px 2px black;
+}
+
+
+.seccion-aside{
+    border-bottom: dotted;
+    height: fit-content;
+    line-height: 28px;
+    padding: 10px 0px 10px 0px;
+    font-size: 15px;
+}
+
+.seccion-aside > h3{
+    margin: 0px;
+    padding: 0px;
+    font-family: Fankin;
+    font-size: 28px;
+    background-color: rgb(216, 213, 213);
+    box-shadow: 0px 0px 2px black inset;
+    color: #4FA6EC;   
+    text-shadow: 0px 2px 1px black; 
+    letter-spacing: 1px;
+    width: 80%;
+    margin: auto;
+    padding: 5px 0px 5px 0px;
+}
+
+.seccion-aside > form > button{
+    background-color: #4FA6EC;
+    border: 1px solid #0a153a;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.seccion-aside > ul{
+    text-align: start;
+    list-style-type: square;
+}
+
+aside > .seccion-aside:first-child > ul {
+    list-style-type: none;
+}
+
+
+/* Centro de la página */
+
+#noticias{
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    float: left;
+    width: 75%;
+}
+
+.noticia{
+    box-shadow: 0px 0px 2px black;
+    padding: 10px;
+    margin: 20px 0px 50px 20px ;
+    background-color: white;
+}
+
+.noticia .sticker{
+    position:absolute;
+    z-index: 0;
+    margin-top: -28px;
+}
+
+.sticker1{
+    margin-left: -400px;
+}
+
+.sticker2{
+    margin-left: 700px
+}
+
+.noticia header{
+    border-bottom: solid 1px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #4FA6EC;   
+    text-shadow: 0px 1px 1px black; 
+}
+
+.texto-noticia{
+    padding: 10px 0px 10px 0px;
+}
+
+footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+    padding-top: 10px;
+}
+span:last-child{
+    color: #4FA6EC;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.clear{
+    clear: both;
+    float: none;
+}   
+
